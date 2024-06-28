@@ -17,6 +17,8 @@ dependencyResolutionManagement {
 
     }
 }
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "WhatsClean"
 include(":app")
-include(":glide_loaders")
+include(":decoders")

@@ -1,4 +1,4 @@
-package com.sachin.app.glide_loaders.pdf
+package com.sachin.glide.decoder.pdf
 
 import android.content.Context
 import android.graphics.Bitmap

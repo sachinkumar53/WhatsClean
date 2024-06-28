@@ -1,4 +1,4 @@
-package com.sachin.app.glide_loaders.apk
+package com.sachin.glide.decoder.apk
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -7,7 +7,7 @@ import androidx.core.graphics.drawable.toBitmap
 import com.bumptech.glide.Priority
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.data.DataFetcher
-import com.sachin.app.glide_loaders.util.Util
+import com.sachin.glide.decoder.util.Util
 import kotlinx.coroutines.*
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream

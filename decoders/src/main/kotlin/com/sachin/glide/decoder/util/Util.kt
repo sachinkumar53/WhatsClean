@@ -1,4 +1,4 @@
-package com.sachin.app.glide_loaders.util
+package com.sachin.glide.decoder.util
 
 import android.content.Context
 import android.content.pm.ApplicationInfo

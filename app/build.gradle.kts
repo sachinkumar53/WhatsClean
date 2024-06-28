@@ -38,11 +38,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 }
 
@@ -51,13 +51,9 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
-//    implementation("androidx.legacy:legacy-support-v4:1.0.0")
-//    implementation("androidx.recyclerview:recyclerview:1.3.2")
-    implementation(libs.androidx.preference.ktx)
-    implementation(project(":glide_loaders"))
 
-//    implementation("androidx.activity:activity-ktx:1.9.0")
-//    implementation("androidx.fragment:fragment-ktx:1.8.1")
+    implementation(libs.androidx.preference.ktx)
+    implementation(projects.decoders)
 
     implementation(libs.androidx.lifecycle.livedata.ktx)
 
@@ -67,9 +63,6 @@ dependencies {
 
     // Coroutines
     implementation(libs.kotlinx.coroutines.android)
-
-//    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
-//    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
 
     // Dagger hilt
     implementation(libs.hilt.android)
@@ -93,13 +86,14 @@ dependencies {
     ksp(libs.glide.ksp)
 
     implementation(libs.smoothbottombar)
+
     //Drag select recyclerview
     implementation(libs.drag.select.recyclerview)
 
     implementation(libs.photoview)
 
     implementation(libs.work.runtime.ktx)
-    //implementation "androidx.paging:paging-runtime:$paging_version"
+
     implementation(libs.biometric)
     implementation(libs.androidx.biometric.ktx)
 
@@ -107,5 +101,4 @@ dependencies {
     implementation(libs.autodispose)
     implementation(libs.observablecollections)
     implementation(libs.shimmer)
-
 }

@@ -1,13 +1,12 @@
-package com.sachin.app.glide_loaders.apk
+package com.sachin.glide.decoder.pdf
 
 import android.content.Context
-import android.util.Size
 import com.bumptech.glide.load.Options
 import com.bumptech.glide.load.model.ModelLoader
 import com.bumptech.glide.signature.ObjectKey
 import java.io.InputStream
 
-class ApkModelLoader(
+class PdfModeLoader(
     private val context: Context
 ) : ModelLoader<String, InputStream> {
     override fun buildLoadData(
@@ -16,14 +15,14 @@ class ApkModelLoader(
         height: Int,
         options: Options
     ): ModelLoader.LoadData<InputStream>? {
-
+        val key = "${model}:$width$height"
         return ModelLoader.LoadData(
-            ObjectKey(model),
-            ApkDataFetcher(context, model, Size(width, height))
+            ObjectKey(key),
+            PdfDataFetcher(context, model)
         )
     }
 
     override fun handles(model: String): Boolean {
-        return model.endsWith("apk")
+        return model.endsWith("pdf")
     }
 }
