@@ -29,7 +29,7 @@ jobs:
         with:
           gradlePath: app/build.gradle.kts
           versionCode: ${{ github.run_number }}
-          versionName: '${{ github.ref }}'
+          versionName: '${{GITHUB_REF#refs/tags/}}'
 
       - name: Generate release APK
         run: ./gradlew assembleRelease --stacktrace
