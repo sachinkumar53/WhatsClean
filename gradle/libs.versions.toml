@@ -1,0 +1,78 @@
+[versions]
+agp = "8.5.0"
+appcompat = "1.7.0"
+autodispose = "0.3.1"
+biometric = "1.1.0"
+biometric-ktx = "1.2.0-alpha05"
+constraintlayout = "2.1.4"
+drag-select-recyclerview = "2.4.0"
+files = "3.3.0"
+kotlin = "2.0.0"
+ksp = "2.0.0-1.0.21"
+coroutine = "1.8.1"
+hilt = "2.51.1"
+lifecycle-livedata-ktx = "2.8.2"
+material = "1.12.0"
+observablecollections = "1.4.2"
+photoview = "2.3.0"
+preference-ktx = "1.2.1"
+room = "2.6.1"
+datastore = "1.1.1"
+navigation = "2.7.7"
+glide = "4.16.0"
+shimmer = "0.5.0"
+smoothbottombar = "1.7.9"
+swiperefreshlayout = "1.1.0"
+viewbindingdelegate = "1.4.0"
+webpdecoder = "2.6.4.16.0"
+work = "2.9.0"
+paging = "3.1.1"
+androidx-core-ktx = "1.13.1"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-biometric-ktx = { module = "androidx.biometric:biometric-ktx", version.ref = "biometric-ktx" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle-livedata-ktx" }
+androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preference-ktx" }
+androidx-swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+autodispose = { module = "com.github.satoshun.coroutine.autodispose:autodispose", version.ref = "autodispose" }
+biometric = { module = "com.mikhaellopez:biometric", version.ref = "biometric" }
+drag-select-recyclerview = { module = "com.afollestad:drag-select-recyclerview", version.ref = "drag-select-recyclerview" }
+files = { module = "com.afollestad.material-dialogs:files", version.ref = "files" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutine" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+
+observablecollections = { module = "il.co.theblitz:observablecollections", version.ref = "observablecollections" }
+photoview = { module = "com.github.chrisbanes:PhotoView", version.ref = "photoview" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-ksp = { module = "com.github.bumptech.glide:ksp", version.ref = "glide" }
+
+shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer" }
+smoothbottombar = { module = "com.github.ibrahimsn98:SmoothBottomBar", version.ref = "smoothbottombar" }
+viewbindingdelegate = { module = "com.github.hoc081098:ViewBindingDelegate", version.ref = "viewbindingdelegate" }
+webpdecoder = { module = "com.github.zjupure:webpdecoder", version.ref = "webpdecoder" }
+work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+
+safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigation" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id="org.jetbrains.kotlin.plugin.parcelize", version.ref="kotlin"}
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+

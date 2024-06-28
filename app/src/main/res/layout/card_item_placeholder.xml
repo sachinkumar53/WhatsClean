@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    app:checkedIcon="@null"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:duplicateParentState="true"
+        android:paddingVertical="12dp">
+
+        <View
+            android:id="@+id/card_title"
+            android:layout_width="128dp"
+            android:layout_height="20dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/card_size"
+            android:layout_width="168dp"
+            android:layout_height="16dp"
+            android:layout_marginVertical="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintStart_toStartOf="@id/card_title"
+            app:layout_constraintTop_toBottomOf="@id/card_title" />
+
+
+        <View
+            android:id="@+id/checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintBottom_toTopOf="@id/card_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/card_title" />
+
+        <View
+            android:id="@+id/preview0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintBottom_toTopOf="@id/explore_button"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/preview1"
+            app:layout_constraintHeight_max="72dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_size" />
+
+        <View
+            android:id="@+id/preview1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="@id/preview0"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/preview2"
+            app:layout_constraintHeight_max="72dp"
+            app:layout_constraintStart_toEndOf="@+id/preview0"
+            app:layout_constraintTop_toTopOf="@id/preview0" />
+
+        <View
+            android:id="@+id/preview2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="@id/preview0"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/preview3"
+            app:layout_constraintHeight_max="72dp"
+            app:layout_constraintStart_toEndOf="@+id/preview1"
+            app:layout_constraintTop_toTopOf="@id/preview0" />
+
+        <View
+            android:id="@+id/preview3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="@id/preview0"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="72dp"
+            app:layout_constraintStart_toEndOf="@+id/preview2"
+            app:layout_constraintTop_toTopOf="@id/preview0" />
+
+        <View
+            android:id="@+id/explore_button"
+            android:layout_width="128dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/preview3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

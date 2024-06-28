@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:checkMark="@drawable/ic_round_check_24"
+    android:checkMarkTint="@color/sort_item_text_color"
+    android:checked="true"
+    android:gravity="center_vertical"
+    android:minHeight="?attr/listPreferredItemHeightSmall"
+    android:padding="@dimen/list_item_spacing"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:textColor="@color/sort_item_text_color"
+    android:textSize="16sp"
+    tools:text="Hello" />

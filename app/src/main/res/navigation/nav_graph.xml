@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.sachin.app.whatsclean.ui.dashboard.DashboardFragment"
+        android:label="@string/app_name">
+        <action
+            android:id="@+id/action_dashboardFragment_to_mediaFragment"
+            app:destination="@id/mediaFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/permissionFragment"
+        android:name="com.sachin.app.whatsclean.ui.PermissionFragment"
+        tools:layout="@layout/fragment_permission">
+        <action
+            android:id="@+id/action_permissionFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/permissionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mediaFragment"
+        android:name="com.sachin.app.whatsclean.ui.media.MediaFragment"
+        android:label="{media_label}"
+        tools:layout="@layout/fragment_media">
+        <argument
+            android:name="media_type"
+            app:argType="com.sachin.app.whatsclean.data.model.MediaType" />
+        <action
+            android:id="@+id/action_mediaFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+
+        <argument
+            android:name="media_label"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mediaFragment_to_sortListDialogFragment"
+            app:destination="@id/sortListDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mediaGridFragment"
+        android:name="com.sachin.app.whatsclean.ui.media.MediaPageFragment" />
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.sachin.app.whatsclean.ui.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery">
+        <argument
+            android:name="initial_position"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="gridType"
+            app:argType="com.sachin.app.whatsclean.data.model.GridType" />
+        <argument
+            android:name="mediaType"
+            app:argType="com.sachin.app.whatsclean.data.model.MediaType" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/sortListDialogFragment"
+        android:name="com.sachin.app.whatsclean.ui.sortby.SortListDialogFragment"
+        android:label="fragment_sort_dialog"
+        tools:layout="@layout/fragment_sort_dialog" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.sachin.app.whatsclean.ui.settings.SettingsFragment"
+        android:label="@string/action_menu_settings" />
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.sachin.app.whatsclean.ui.authentication.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication">
+
+        <action
+            android:id="@+id/action_authenticationFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/authenticationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

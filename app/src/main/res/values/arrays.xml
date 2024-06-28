@@ -1,0 +1,28 @@
+<resources>
+    <!-- Reply Preference -->
+
+    <string-array name="theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>By Battery Saver</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>battery_saver</item>
+    </string-array>
+
+    <string-array name="sort_by_entries">
+        <item>Newest first</item>
+        <item>Oldest first</item>
+        <item>Largest first</item>
+        <item>Smallest first</item>
+    </string-array>
+    <string-array name="sort_by_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

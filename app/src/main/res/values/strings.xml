@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">WhatsClean</string>
+    <string name="explore">Explore files</string>
+    <string name="permission_message">Storage access is required to use this app. Press Allow and grant storage access permission.</string>
+    <string name="exit">Exit</string>
+    <string name="allow">Allow</string>
+    <string name="image">Image</string>
+    <string name="document">Document</string>
+    <string name="database">Database</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="sticker">Sticker</string>
+    <string name="voice_notes">Voice Notes</string>
+    <string name="animated_gif">Animated GIF</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="status">Status</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="sort_by">Sort by</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="delete_files">Delete files</string>
+    <string name="move_to_gallery">Move to Gallery</string>
+    <string name="no_files">No files</string>
+    <string name="action_menu_rate">Rate this app</string>
+    <string name="action_menu_settings">Settings</string>
+    <string name="action_menu_share">Share this app</string>
+    <string name="action_menu_more_apps">More apps</string>
+    <string name="sort_by_newest_first">Newest first</string>
+    <string name="sort_by_oldest_first">Oldest first</string>
+    <string name="sort_by_largest_first">Largest first</string>
+    <string name="sort_by_smallest_first">Smallest first</string>
+    <string name="duplicates">Duplicates</string>
+
+    <string name="unable_to_share_file">No Application found to share this type of file.</string>
+    <string name="share_file_using">Share using</string>
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+    <string name="unable_to_open_file">No application found to open this type of file</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+    <string name="delete_dialog_title">Delete files?</string>
+    <string name="delete_dialog_message">All the selected files will be delete permanently. This can not be undone. Do you want to continue?</string>
+    <string name="move_destination_dialog_title">Move files?</string>
+    <string name="move_destination_dialog_message">Choose a destination folder to move the selected files?</string>
+    <string name="choose">Choose</string>
+    <string name="move_confirmation_dialog_title">Move to gallery?</string>
+    <string name="move_confirmation_dialog_message">Are you sure want to move the selected files to the gallery?</string>
+    <string name="cancel">Cancel</string>
+    <string name="keep_one_copy_of_each">Keep one copy of each</string>
+    <string name="pref_key_theme">theme</string>
+    <string name="pref_title_theme">Theme</string>
+
+    <string name="pref_key_whatsapp_folder">whatsapp_folder</string>
+    <string name="pref_title_whatsapp_folder">WhatsApp directory</string>
+    <string name="pref_key_sort_by">sort_by</string>
+    <string name="pref_title_sort_by">Sort files by</string>
+
+    <string name="pref_key_recycle_bin">trash_bin</string>
+    <string name="pref_summary_recycle_bin">Move files to trash bin instead of permanently deleting it. Files in recycle deleted after 30 days</string>
+    <string name="pref_title_recycle_bin">Recycle bin</string>
+    <string name="pref_key_fingerprint">fingerprint</string>
+    <string name="pref_summary_fingerprint">Require a fingerprint authentication to access the app</string>
+    <string name="pref_title_fingerprint">Fingerprint authentication</string>
+    <string name="pref_key_app_version">app_version</string>
+    <string name="pref_title_app_version">Version</string>
+    <string name="pref_key_contact_us">contact_developer</string>
+    <string name="pref_title_contact_us">Contact us</string>
+    <string name="fingerprint_prompt_title">Verify your identity</string>
+    <string name="fingerprint_prompt_desc">Scan your fingerprint to unlock the app</string>
+    <string name="enroll_fingerprint_message">Your device doesn\'t have any fingerprint enrolled. Setup fingerprint in the settings first, to use this feature.</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="fingerprint_setup">Setup</string>
+    <string name="fingerprint_not_added">No fingerprint added</string>
+    <string name="invalid_whatsapp_folder">Selected folder is not a valid WhatsApp folder.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="card_detail_transition_name">card_detail</string>
+    <string name="label_fragment_premium">Upgrade to premium</string>
+    <string name="yearly">Yearly</string>
+    <string name="monthly">Monthly</string>
+    <string name="weekly">Weekly</string>
+    <string name="price_placeholder">--</string>
+    <string name="per_year">per year</string>
+    <string name="per_month">per month</string>
+    <string name="ok">OK</string>
+    <string name="congrats">Congratulations</string>
+    <string name="subscription_restored_message">You have already subscribed to our premium plan. Your subscription is restored successfully.</string>
+    <string name="subscription_purchased_message">Your subscription was successful. Enjoy our Ad-free experience</string>
+    <string name="pref_premium_summary">Enjoy an ad free experience</string>
+    <string name="pref_key_premium">premium</string>
+    <string name="clean_button_text_format">Clean (%s)</string>
+
+</resources>

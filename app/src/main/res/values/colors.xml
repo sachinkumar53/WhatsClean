@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    <color name="green_teal">#239B56</color>-->
+    <color name="jade_green">#00A86B</color>
+    <color name="primary_color">@color/jade_green</color>
+    <color name="primary_translucent">#1A00A86B</color>
+    <color name="surface_color">#f5f5f5</color>
+    <color name="black">#FF000000</color>
+    <color name="translucent">#4D000000</color>
+    <color name="grey_300">#e0e0e0</color>
+
+    <color name="grey_50">#F5F5F5</color>
+    <color name="white">#ffffff</color>
+    <color name="place_holder_color">#dddddd</color>
+
+</resources>

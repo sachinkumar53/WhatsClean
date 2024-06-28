@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+        <shape>
+            <stroke android:width="2dp" android:color="#0091EA" />
+
+            <corners android:bottomLeftRadius="16dp" android:topLeftRadius="16dp" />
+        </shape>
+
+    </item>
+    <item>
+        <ripple android:color="?attr/colorControlHighlight">
+            <item android:id="@android:id/mask">
+                <shape>
+                    <solid android:color="#000000" />
+                    <corners android:bottomLeftRadius="16dp" android:topLeftRadius="16dp" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</selector>

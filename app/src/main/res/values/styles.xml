@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="CustomActionModeTheme" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="actionModeBackground">@drawable/window_background</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionModeCloseButton</item>
+    </style>
+
+    <style name="ActionModeCloseButton" parent="android:style/Widget.ActionButton.CloseMode">
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="CheckboxStyle" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/circle_checkbox</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="CardViewStyle" parent="Widget.Material3.CardView.Outlined">
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">20dp</item>
+    </style>
+
+
+    <style name="RoundCornerOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/grid_item_corner_radius</item>
+    </style>
+
+    <style name="Theme.WhatsClean.BottomSheetDialog" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorSecondary">@color/primary_color</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/BottomSheetCornerOverlay</item>
+    </style>
+
+    <style name="BottomSheetCornerOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
+
+</resources>

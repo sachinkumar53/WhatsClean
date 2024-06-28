@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="16dp"
+    android:background="@drawable/stroked_bg"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_premium">
+
+    <LinearLayout
+        android:id="@+id/weekly_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroked_bg_left"
+        android:gravity="center_horizontal"
+        android:minWidth="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/weekly"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weekly_price"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp"
+            android:text="@string/price_placeholder"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="16sp"
+            tools:text="Rs 49" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12sp"
+            android:text="per week" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/monthly_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroked_bg_center"
+        android:gravity="center"
+        android:minWidth="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/monthly"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/monthly_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:text="@string/price_placeholder"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="16sp"
+            tools:text="Rs 179" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12sp"
+            android:text="@string/per_month" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yearly_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroked_bg_right"
+        android:gravity="center"
+        android:minWidth="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/yearly"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/yearly_price"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/price_placeholder"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="16sp"
+            tools:text="Rs 1890" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/per_year"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Personalize">
+        <DropDownPreference
+            android:defaultValue="@string/pref_default_theme"
+            android:entryValues="@array/theme_values"
+            app:entries="@array/theme_entries"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_key_theme"
+            app:title="@string/pref_title_theme"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="General">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_key_whatsapp_folder"
+            app:title="@string/pref_title_whatsapp_folder"
+            tools:summary="Android/media/com.whatsapp/WhatsApp" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_default_sort_value"
+            android:entryValues="@array/sort_by_values"
+            app:entries="@array/sort_by_entries"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_key_sort_by"
+            app:title="@string/pref_title_sort_by"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:isPreferenceVisible="false"
+            app:key="@string/pref_key_recycle_bin"
+            app:summary="@string/pref_summary_recycle_bin"
+            app:title="@string/pref_title_recycle_bin" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Privacy">
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_key_fingerprint"
+            app:summary="@string/pref_summary_fingerprint"
+            app:title="@string/pref_title_fingerprint" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="About">
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_key_app_version"
+            app:title="@string/pref_title_app_version"
+            tools:summary="2.0" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_key_contact_us"
+            app:title="@string/pref_title_contact_us" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

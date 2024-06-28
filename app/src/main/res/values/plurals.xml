@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="file_count_format">
+        <item quantity="zero">No files found</item>
+        <item quantity="one">1 file found</item>
+        <item quantity="other">%d files found</item>
+    </plurals>
+
+</resources>

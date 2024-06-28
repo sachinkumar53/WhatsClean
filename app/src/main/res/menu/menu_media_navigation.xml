@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/received"
+        android:icon="@drawable/ic_folder_received"
+        android:title="@string/received" />
+
+    <item
+        android:id="@+id/sent"
+        android:icon="@drawable/ic_folder_sent"
+        android:title="@string/sent" />
+
+    <item
+        android:id="@+id/duplicated"
+        android:icon="@drawable/ic_folder_duplicates"
+        android:title="@string/duplicates" />
+</menu>
