@@ -23,7 +23,7 @@ You can download the latest version of WhatsClean from the [Releases](https://gi
 
 ## Installation
 
-1. Download the APK file from the [Releases](https://github.com/yourusername/whatsclean/releases) section.
+1. Download the APK file from the [Releases](https://github.com/sachinkumar53/whatsclean/releases) section.
 2. Open the APK file and follow the instructions to install the app on your Android device.
 3. Grant the required permissions when prompted.
 
