@@ -1,6 +1,6 @@
 # WhatsClean - Cleaner for WhatsApp
 
-[![Release](https://img.shields.io/github/v/release/yourusername/whatsclean)](https://github.com/yourusername/whatsclean/releases)
+[![Release](https://img.shields.io/github/v/release/sachinkumar53/whatsclean)](https://github.com/sachinkumar53/whatsclean/releases)
 
 **WhatsClean** is an Android app designed to help you organize and manage all media files from WhatsApp efficiently. With a variety of features, it simplifies the process of viewing, saving, sharing, and deleting media files while providing tools to clean up unwanted junk and ensure media security.
 
@@ -17,9 +17,6 @@
 - **Light and Dark Theme**: Choose between light and dark themes based on your preference.
 - **Multiple Sort Options**: Sort your media files using various criteria for better organization.
 
-## Download
-
-You can download the latest version of WhatsClean from the [Releases](https://github.com/sachinkumar53/whatsclean/releases) section.
 
 ## Installation
 
