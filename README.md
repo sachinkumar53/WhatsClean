@@ -2,6 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/sachinkumar53/whatsclean)](https://github.com/sachinkumar53/whatsclean/releases)
 
+![Banner](https://github.com/sachinkumar53/whatsclean/graphics/banner.png)
 **WhatsClean** is an Android app designed to help you organize and manage all media files from WhatsApp efficiently. With a variety of features, it simplifies the process of viewing, saving, sharing, and deleting media files while providing tools to clean up unwanted junk and ensure media security.
 
 ## Features
