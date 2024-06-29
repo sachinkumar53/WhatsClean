@@ -22,10 +22,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.sachin.app.whatsclean" />
+                  <option name="mobileSdkAppId" value="1:296465030163:android:c69ba48599282e8dbc73e6" />
+                  <option name="projectId" value="whatsclean-e7239" />
+                  <option name="projectNumber" value="296465030163" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

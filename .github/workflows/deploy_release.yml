@@ -33,11 +33,8 @@ jobs:
 
       - name: Set up Google Services
         env:
-         GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
-        run: echo "$GOOGLE_SERVICES_JSON" > ./app/google-services.json"
-
-      - name: Ensure services copied
-        run: ls app
+          GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
+        run: echo $GOOGLE_SERVICES_JSON > ./app/google-services.json
 
       - name: Generate release APK
         run: ./gradlew assembleRelease --stacktrace
