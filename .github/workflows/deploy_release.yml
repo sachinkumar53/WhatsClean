@@ -86,5 +86,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./release/app-release-unsigned-signed.apk
-          asset_name: WhatsClean.apk
+          asset_name: WhatsClean_v${{ github.ref_name }}.apk
           asset_content_type: application/vnd.android.package-archive
