@@ -1,4 +1,4 @@
-name: Build and Deploy release
+name: Test
 on:
   workflow_dispatch: null
 
