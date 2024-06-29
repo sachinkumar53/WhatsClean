@@ -5,6 +5,9 @@ plugins {
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.dagger.hilt)
     id("androidx.navigation.safeargs.kotlin")
+    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.firebase.crashlytics)
+    alias(libs.plugins.google.firebase.firebase.perf)
 
 }
 
@@ -66,6 +69,8 @@ dependencies {
 
     // Dagger hilt
     implementation(libs.hilt.android)
+    implementation(libs.firebase.crashlytics)
+    implementation(libs.firebase.perf)
     ksp(libs.hilt.compiler)
 
     // Room database

@@ -28,6 +28,11 @@ webpdecoder = "2.6.4.16.0"
 work = "2.9.0"
 paging = "3.1.1"
 androidx-core-ktx = "1.13.1"
+firebase-crashlytics = "19.0.2"
+google-gms-google-services = "4.4.2"
+google-firebase-crashlytics = "3.0.2"
+firebase-perf = "21.0.1"
+google-firebase-firebase-perf = "1.4.2"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -67,6 +72,8 @@ webpdecoder = { module = "com.github.zjupure:webpdecoder", version.ref = "webpde
 work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
 
 safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigation" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics", version.ref = "firebase-crashlytics" }
+firebase-perf = { group = "com.google.firebase", name = "firebase-perf", version.ref = "firebase-perf" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -75,4 +82,7 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-parcelize = { id="org.jetbrains.kotlin.plugin.parcelize", version.ref="kotlin"}
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "google-gms-google-services" }
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "google-firebase-crashlytics" }
+google-firebase-firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "google-firebase-firebase-perf" }
 
