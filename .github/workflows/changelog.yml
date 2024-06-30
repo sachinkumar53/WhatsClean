@@ -11,7 +11,9 @@ jobs:
       
       # Generate change log file using the script
       - name: Generate Change Log
-        run: bash generate_changelog.sh
+        uses: heinrichreimer/action-github-changelog-generator@v2.3
+        with:
+          token: ${{ secrets.TOKEN }} 
       
       - name: Print changelog
         run: cat changelog.txt
