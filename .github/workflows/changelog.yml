@@ -12,3 +12,6 @@ jobs:
       # Generate change log file using the script
       - name: Generate Change Log
         run: bash generate_changelog.sh
+      
+      - name: Print changelog
+        run: cat changelog.txt
