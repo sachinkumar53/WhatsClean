@@ -6,10 +6,15 @@
         android:icon="@drawable/ic_menu_settings"
         android:title="@string/action_menu_settings" />
 
-    <item
+    <!--<item
         android:id="@+id/rate"
         android:icon="@drawable/ic_menu_rate"
-        android:title="@string/action_menu_rate" />
+        android:title="@string/action_menu_rate" />-->
+
+    <item
+        android:id="@+id/github"
+        android:icon="@drawable/ic_github"
+        android:title="@string/action_menu_github" />
 
     <item
         android:id="@+id/share"

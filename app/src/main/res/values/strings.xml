@@ -92,5 +92,9 @@
     <string name="pref_premium_summary">Enjoy an ad free experience</string>
     <string name="pref_key_premium">premium</string>
     <string name="clean_button_text_format">Clean (%s)</string>
+    <string name="action_menu_github">" Github"</string>
+    <string name="update_available">Update Available</string>
+    <string name="mandatory_app_update_message">A new version of the app is now available, providing the greatest experience and access to new features. Please update to the most recent version to continue using this app.</string>
+    <string name="flexible_app_update_message">A new version of the app is now available! Update to the latest version to enjoy new features, improvements, and bug fixes.</string>
 
 </resources>

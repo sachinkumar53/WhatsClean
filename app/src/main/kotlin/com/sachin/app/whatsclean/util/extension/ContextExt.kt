@@ -65,7 +65,7 @@ fun Context.sendEmail(
     }
 }
 
-fun Context.openPlayStore() {
+/*fun Context.openPlayStore() {
     try {
         startActivity(
             Intent(
@@ -81,7 +81,7 @@ fun Context.openPlayStore() {
             )
         )
     }
-}
+}*/
 
 fun Context.openDeveloperPage() {
     try {

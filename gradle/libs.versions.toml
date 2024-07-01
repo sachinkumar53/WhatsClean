@@ -8,10 +8,13 @@ constraintlayout = "2.1.4"
 drag-select-recyclerview = "2.4.0"
 files = "3.3.0"
 kotlin = "2.0.0"
+kotlinx-serialization-json = "1.7.1"
 ksp = "2.0.0-1.0.21"
 coroutine = "1.8.1"
 hilt = "2.51.1"
+ktor-client-core = "2.3.12"
 lifecycle-livedata-ktx = "2.8.2"
+lottie = "6.4.1"
 material = "1.12.0"
 observablecollections = "1.4.2"
 photoview = "2.3.0"
@@ -34,6 +37,7 @@ google-firebase-crashlytics = "3.0.2"
 firebase-perf = "21.0.1"
 google-firebase-firebase-perf = "1.4.2"
 firebase-analytics = "22.0.2"
+firebase-config = "22.0.0"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -47,6 +51,11 @@ autodispose = { module = "com.github.satoshun.coroutine.autodispose:autodispose"
 biometric = { module = "com.mikhaellopez:biometric", version.ref = "biometric" }
 drag-select-recyclerview = { module = "com.afollestad:drag-select-recyclerview", version.ref = "drag-select-recyclerview" }
 files = { module = "com.afollestad.material-dialogs:files", version.ref = "files" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor-client-core" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor-client-core" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor-client-core" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor-client-core" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
 navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
@@ -76,13 +85,15 @@ safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-g
 firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics", version.ref = "firebase-crashlytics" }
 firebase-perf = { group = "com.google.firebase", name = "firebase-perf", version.ref = "firebase-perf" }
 firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version.ref = "firebase-analytics" }
+firebase-config = { group = "com.google.firebase", name = "firebase-config", version.ref = "firebase-config" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-parcelize = { id="org.jetbrains.kotlin.plugin.parcelize", version.ref="kotlin"}
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "google-gms-google-services" }
 google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "google-firebase-crashlytics" }
