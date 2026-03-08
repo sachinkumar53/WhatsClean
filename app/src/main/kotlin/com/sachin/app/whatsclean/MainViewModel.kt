@@ -10,7 +10,6 @@ import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import com.sachin.app.whatsclean.data.SettingsManager
 import com.sachin.app.whatsclean.util.extension.openDeveloperPage
-import com.sachin.app.whatsclean.util.extension.openPlayStore
 import com.sachin.app.whatsclean.util.extension.sendAppLink
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.first
@@ -41,10 +40,10 @@ class MainViewModel @Inject constructor(
             true
         }
 
-        R.id.rate -> {
+        /*R.id.rate -> {
             context.openPlayStore()
             true
-        }
+        }*/
 
         R.id.share -> {
             context.sendAppLink()

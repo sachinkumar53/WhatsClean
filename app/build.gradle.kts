@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.dagger.hilt)
     id("androidx.navigation.safeargs.kotlin")
     alias(libs.plugins.google.gms.google.services)
@@ -20,7 +21,7 @@ android {
         minSdk = 21
         targetSdk = 34
         versionCode = 29
-        versionName = "2.2.0"
+        versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -72,12 +73,19 @@ dependencies {
     implementation(libs.firebase.crashlytics)
     implementation(libs.firebase.perf)
     implementation(libs.firebase.analytics)
+    implementation(libs.firebase.config)
     ksp(libs.hilt.compiler)
 
     // Room database
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
+    implementation(libs.lottie)
+
+    implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.serialization.kotlinx.json)
 
     // Datastore
     implementation(libs.datastore.preferences)

@@ -13,12 +13,12 @@ class DuplicateSearchWorker(
 
 
     override suspend fun doWork(): Result {
-
+        // TODO: Implement the duplicate search logic here
         return Result.success()
     }
 
     private suspend fun generateAndSaveMd5() = withContext(Dispatchers.IO) {
-
+        // TODO: Implement the MD5 generation logic here
     }
 
 }

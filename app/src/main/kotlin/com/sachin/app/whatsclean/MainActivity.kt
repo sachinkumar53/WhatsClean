@@ -3,6 +3,7 @@ package com.sachin.app.whatsclean
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +13,7 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout.LOCK_MODE_LOCKED_CLOSED
 import androidx.drawerlayout.widget.DrawerLayout.LOCK_MODE_UNLOCKED
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
@@ -19,10 +21,15 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.hoc081098.viewbindingdelegate.viewBinding
+import com.sachin.app.whatsclean.data.network.GithubApiClient
 import com.sachin.app.whatsclean.databinding.ActivityMainBinding
+import com.sachin.app.whatsclean.ui.update.AppUpdateDialog
+import com.sachin.app.whatsclean.ui.update.AppUpdateManager
 import com.sachin.app.whatsclean.util.extension.checkStoragePermission
 import com.sachin.app.whatsclean.util.extension.findNavHostFragment
 import dagger.hilt.android.AndroidEntryPoint
+import io.ktor.client.statement.bodyAsText
+import kotlinx.coroutines.launch
 
 private const val TAG = "MainActivity"
 
@@ -112,6 +119,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                     isVisible = true
             }
         }
+
     }
 
 

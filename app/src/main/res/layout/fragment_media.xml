@@ -36,14 +36,15 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_menu_bar"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:paddingVertical="4dp"
         android:translationY="64dp"
-        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        app:backgroundTint="?attr/colorPrimary"
         app:elevation="0dp"
-        app:itemIconTint="?attr/actionMenuTextColor"
-        app:itemTextColor="?attr/actionMenuTextColor"
+        app:itemIconTint="?attr/colorOnPrimary"
+        app:itemTextColor="?attr/colorOnPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
